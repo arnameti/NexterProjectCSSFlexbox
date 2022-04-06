@@ -1,0 +1,13 @@
+.story {
+  &__pictures {
+    background-color: gold;
+    flex: 1 1 0;
+    height: 400px;
+  }
+
+  &__content {
+    background-color: lightgreen;
+    flex: 1 1 0;
+    height: 400px;
+  }
+}
