@@ -1,4 +1,60 @@
 .header {
-  background-color: goldenrod;
   flex: 2 1 0;
+  background: linear-gradient(rgba(#101d2c, 0.9), rgba(#101d2c, 0.9)),
+    url("../img/hero.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__container {
+    max-width: 84rem;
+    height: 100%;
+    margin: 0 auto;
+    padding: 4rem 3rem 8rem 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  &__img {
+    height: 3rem;
+    align-self: center;
+  }
+
+  &__title {
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+
+  &__seenon {
+    color: var(--clr-grey-light-2);
+    font-size: 1.4rem;
+
+    display: flex;
+    gap: 1rem;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      height: 1px;
+      background-color: currentColor;
+      flex: 1 1 0;
+      align-self: center;
+    }
+  }
+
+  &__seenon-logo {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    img {
+      max-height: 2.5rem;
+      width: 100%;
+      filter: brightness(70%);
+    }
+  }
 }
