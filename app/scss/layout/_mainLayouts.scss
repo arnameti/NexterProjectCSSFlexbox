@@ -10,3 +10,20 @@
   flex: 1 1 0;
 }
 
+.header__realtors-container {
+  height: 80vh;
+  display: flex;
+
+  @media screen and(max-width: 1000px) {
+    height: 60vh;
+  }
+
+  @media screen and(max-width: 800px) {
+    flex-direction: column;
+    height: 70vh;
+  }
+
+  @media screen and(max-width: 600px) {
+    height: 80vh;
+  }
+}
