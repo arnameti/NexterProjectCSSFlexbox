@@ -1,4 +1,23 @@
 .footer {
   background-color: var(--clr-secondary);
-  padding: 15rem;
+  padding: 8rem;
+
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+
+
+    &-link:link,
+    &-link:visited {
+      display: block;
+      color: #fff;
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 1.5rem;
+      transition: all 0.2s ease 0s;
+    }
+  }
 }
