@@ -29,7 +29,13 @@
 }
 
 .story-container {
-  height: 40vw;
+  height: 35vw;
   display: flex;
+
+  @media screen and(max-width: 900px) {
+
+    flex-direction: column;
+    height: auto;
+  }
 
 }
